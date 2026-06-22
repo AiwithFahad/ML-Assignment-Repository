@@ -4,7 +4,8 @@ ML-Assignment-Repository
 📘 Simple Linear Regression — Student Performance (Assignment 1)
 📌 Overview
 
-This project implements Simple Linear Regression to predict student exam scores based on the number of study hours. The workflow includes data loading, preprocessing, model training, prediction, and evaluation using standard regression metrics.
+This project implements Simple Linear Regression to predict student exam scores based on the number of study hours. The workflow includes data loading,
+preprocessing, model training, prediction, and evaluation using standard regression metrics.
 
 📂 Dataset Information
 Dataset Used: StudentsPerformance.csv
@@ -41,7 +42,9 @@ Distribution plots for variables
 Correlation heatmap
 🧾 Conclusion
 
-The Simple Linear Regression model successfully predicts student performance based on study hours with reasonable accuracy. While study time is a strong predictor, incorporating additional features (such as attendance, prior grades, or learning habits) could further improve model performance.
+The Simple Linear Regression model successfully predicts student performance based on study hours with reasonable accuracy. 
+While study time is a strong predictor, incorporating additional features (such as attendance, prior grades, or learning habits) 
+could further improve model performance.
 
 🏁 Assignment Complete
 Simple Linear Regression — Student Performance
