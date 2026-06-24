@@ -1,7 +1,4 @@
-Here is your **proper clean GitHub README in plain text format (correctly structured, no markdown/code issues):**
-
----
-
+# (Assignment 1)
 # 📘 Simple Linear Regression — Student Performance (Assignment 1)
 
 ---
@@ -108,7 +105,206 @@ Model Performance:
 R² Score = 0.7970
 RMSE = 6.5973
 
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# (Assignment 2)
+# 📘 Multivariate Linear Regression — Medical Insurance Price Prediction 
+
 ---
 
-If you want, I can also convert this into a **very professional GitHub README with badges, emojis structured sections, and project banner**.
+## 📌 Overview
+
+This project implements **Multivariate Linear Regression** to predict **medical insurance charges** using multiple independent variables.
+
+The workflow includes:
+
+* Data loading
+* Exploratory Data Analysis (EDA)
+* Data preprocessing and encoding
+* Feature selection
+* Train-test splitting
+* Model training
+* Prediction
+* Regression equation analysis
+* Model evaluation using regression metrics
+* Manual verification of predictions
+* Feature comparison experiments
+
+The goal of this assignment is to understand how multiple factors such as **age, BMI, number of children, smoking status, sex, and region** affect medical insurance charges using machine learning.
+
+---
+
+## 📂 Dataset Information
+
+* **Dataset Used:** Medical_insurance.csv
+* **Dataset Path:** `/content/drive/MyDrive/Medical_insurance.csv`
+* **Shape:** (2772, 7)
+* **Source:** Medical Insurance Price Prediction Dataset
+* **Target Variable:** `charges`
+
+---
+
+## 🧾 Features Used
+
+The dataset contains the following input features:
+
+* **age** — age of the individual
+* **sex** — gender of the individual
+* **bmi** — Body Mass Index
+* **children** — number of dependents covered by insurance
+* **smoker** — whether the individual is a smoker or not
+* **region** — residential region of the individual
+
+### 🎯 Target Variable
+
+* **charges** — medical insurance cost to be predicted
+
+---
+
+## 🛠 Tasks Performed
+
+### 1) Data Loading
+
+* Imported all required Python libraries
+* Loaded the **Medical_insurance.csv** dataset into a dataframe
+
+### 2) Dataset Understanding / EDA
+
+Performed a full exploratory analysis of the dataset, including:
+
+* Checking dataset shape
+* Inspecting column names and data types
+* Reviewing summary statistics
+* Checking for missing values
+* Exploring unique values in categorical columns
+* Visualizing the distribution of insurance charges
+* Exploring relationships between features and charges using:
+
+  * scatter plots
+  * box plots
+
+### 3) Data Preprocessing
+
+Prepared the dataset for regression modeling by:
+
+* Creating a working copy of the original dataframe
+* Encoding binary categorical features:
+
+  * `sex`
+  * `smoker`
+* Encoding the multi-category feature:
+
+  * `region`
+* Ensuring all features were in a machine-learning-ready format
+
+### 4) Feature Selection and Train-Test Split
+
+* Defined **X** as the set of independent variables
+* Defined **y** as the target variable (`charges`)
+* Split the dataset into:
+
+  * **80% training data**
+  * **20% testing data**
+
+### 5) Model Training
+
+* Trained a **Linear Regression** model using the prepared training data
+* Learned regression coefficients for each feature
+* Learned the model intercept
+
+### 6) Coefficients and Regression Equation Analysis
+
+* Displayed the coefficients of all selected features
+* Displayed the intercept value
+* Printed the complete regression equation
+* Interpreted how each feature affects insurance charges
+
+### 7) Model Evaluation
+
+Evaluated model performance using the following regression metrics:
+
+* **R² Score**
+* **Mean Absolute Error (MAE)**
+* **Root Mean Squared Error (RMSE)**
+
+Also analyzed performance through visualizations such as:
+
+* **Actual vs Predicted Charges**
+* **Residual plots**
+
+### 8) Manual Verification
+
+* Selected one test sample
+* Manually calculated the predicted insurance charge using the regression equation
+* Compared the manual result with the model prediction to verify the model logic
+
+---
+
+## 🧪 Practice Tasks / Experiments
+
+### Task A — Full Model
+
+Built a multivariate regression model using all relevant available features.
+
+### Task B — Numeric-Only Model
+
+Built a model using only numeric variables:
+
+* `age`
+* `bmi`
+* `children`
+
+### Task C — Numeric + Encoded Categorical Variables
+
+Built a model using numeric features together with encoded categorical variables.
+
+### Task D — Feature Comparison Experiment
+
+Compared multiple models using different feature subsets to study the impact of feature selection on model performance.
+
+### Task E — Most Influential Feature Analysis
+
+Analyzed which feature had the strongest impact on insurance charges based on:
+
+* coefficient magnitude
+* individual predictive power
+
+---
+
+## 📈 Extra Practice Ideas
+
+Additional experiments included:
+
+* Building a **smoker-only model**
+* Applying **feature scaling**
+* Checking **correlation among numeric variables**
+* Removing one feature and retraining the model
+* Comparing different feature combinations for better understanding
+
+---
+
+## 📊 Outcome / Results
+
+The assignment successfully demonstrates the application of **Multivariate Linear Regression** on a real-world medical insurance dataset.
+
+The **best-performing model** used the following features:
+
+* `age`
+* `bmi`
+* `children`
+* `sex_encoded`
+* `smoker_encoded`
+
+This model achieved an **R² Score of approximately 0.74 on the test set**.
+
+
+
 
