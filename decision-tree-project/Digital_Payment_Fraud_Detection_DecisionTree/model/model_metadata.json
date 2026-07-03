@@ -1,0 +1,46 @@
+{
+  "model_type": "DecisionTreeClassifier",
+  "random_state": 42,
+  "best_params": {
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 10,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2
+  },
+  "feature_columns": [
+    "step",
+    "type_encoded",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "balance_diff_orig",
+    "balance_diff_dest",
+    "amount_to_balance_ratio",
+    "orig_zero_balance_flag",
+    "dest_zero_balance_flag",
+    "suspicious_transaction_flag",
+    "large_transaction_flag",
+    "orig_balance_error",
+    "dest_balance_error",
+    "isFlaggedFraud"
+  ],
+  "transaction_types": [
+    "CASH_IN",
+    "CASH_OUT",
+    "DEBIT",
+    "PAYMENT",
+    "TRANSFER"
+  ],
+  "tree_depth": 10,
+  "tree_leaves": 20,
+  "metrics": {
+    "Accuracy": 0.998,
+    "Precision": 0.995,
+    "Recall": 0.995,
+    "F1 Score": 0.995,
+    "ROC-AUC": 0.996865625
+  }
+}

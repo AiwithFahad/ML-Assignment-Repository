@@ -1,0 +1,16 @@
+|--- suspicious_transaction_flag <= 0.50
+|   |--- dest_balance_error <= 2374096.38
+|   |   |--- balance_diff_orig <= 914878.09
+|   |   |   |--- isFlaggedFraud <= 0.50
+|   |   |   |   |--- step <= 38.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- step >  38.50
+|   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- isFlaggedFraud >  0.50
+|   |   |   |   |--- class: 1
+|   |   |--- balance_diff_orig >  914878.09
+|   |   |   |--- class: 1
+|   |--- dest_balance_error >  2374096.38
+|   |   |--- class: 1
+|--- suspicious_transaction_flag >  0.50
+|   |--- class: 1
